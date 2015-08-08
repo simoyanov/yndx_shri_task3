@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+<div class="wrap">
+    <div class="load-file">
+        <input type="file" id="files" name="files[]" multiple />
+        ИЛИ
+        <div id="drop_zone"><span>Перетащите файлы сюда</span></div>
+        <output id="list"></output>
+    </div>
+    <button onclick="localAudioPlayer()">Запустить плеер</button>
+    <div class="play-stop">
+       <div class="control play" id="play"></div>
+       <div class="control stop" id="stop"></div>
+    </div>
+    <div class="visual">
+        <canvas class="visualizer"></canvas>
+    </div>
+    <div class="equalizer" id="equalizer">
+       <input name="eq" type="radio" id="pop" checked="checked"> <label for="pop">Поп</label>
+       <input name="eq" type="radio" id="rock"> <label for="rock">Рок</label>
+       <input name="eq" type="radio" id="jazz"> <label for="jazz">Джаз</label>
+       <input name="eq" type="radio" id="classic"> <label for="classic">Классик</label>
+       <input name="eq" type="radio" id="normal"> <label for="normal">Норма</label>
+    </div>
+</div>
+
+<script src="js/id3-minimized.js"></script>
+<script src="js/player.js"></script>
+    
+
+</body>
+</html>

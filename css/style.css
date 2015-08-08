@@ -1,0 +1,136 @@
+
+.play {
+    
+}
+.stop {
+    
+}
+.control:hover {
+    cursor:pointer;
+    opacity:0.8;
+}
+/******************************************dragnaddrop***************************************/
+.dropzone {
+  width: 300px;
+  height: 300px;
+  border: 2px dashed #aaa;
+  color: #aaa;
+  line-height: 280px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  top: 50%;
+  margin-top: -150px;
+}
+
+.dropzone.dragover {
+  color: green;
+  border: 2px dashed #000;
+}
+#drop_zone {
+    border: 2px dashed #333;
+    display: block;
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+ 
+#drop_zone span{
+    display: inline-block;
+    text-transform: uppercase;
+    margin: none;
+}
+
+.visualiser {
+    width: 500px;
+    height: 200px;
+}
+
+#files {
+    display: block;
+    margin: 10px auto;
+}
+
+#play {
+    display:none;
+    margin:5px;
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-image: url(../img/play.png);
+    text-indent:-200px;
+}
+
+#stop {
+    display:none;
+    margin:5px;
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-image: url(../img/stop.png);
+    text-indent:-200px;
+}
+#list ul li{
+    list-style-type: none;
+}
+button {
+    display: block;
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffd138;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 10px auto;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #f7c10e;    
+}
+p{
+    color: #ff2626;
+    font-weight: bold;
+}
+.wrap {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.load-file {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    line-height: 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    color: #333434;
+}
+
+.play-stop {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.equalizer {
+    display: none;
+    margin: 15px auto;
+    width: 350px;
+}
+.equalizer input, .equalizer label{cursor: pointer;}
+
+.visualizer {
+    border-radius: 75px;
+}
